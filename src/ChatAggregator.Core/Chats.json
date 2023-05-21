@@ -1,0 +1,40 @@
+[
+  {
+    "UserName": "Bob",
+    "Type": 0,
+    "Time": "2023-05-20T16:00:00Z"
+  },
+  {
+    "UserName": "Kate",
+    "Type": 0,
+    "Time": "2023-05-20T16:05:00Z"
+  },
+  {
+    "UserName": "Bob",
+    "Type": 2,
+    "Message": "Hey, Kate - high five?",
+    "Time": "2023-05-20T16:15:00Z"
+  },
+  {
+    "UserName": "Kate",
+    "Type": 3,
+    "Message": "Kate high-fives Bob",
+    "Time": "2023-05-20T16:17:00Z"
+  },
+  {
+    "UserName": "Bob",
+    "Type": 1,
+    "Time": "2023-05-20T16:18:00Z"
+  },
+  {
+    "UserName": "Kate",
+    "Type": 2,
+    "Message": "Oh, typical",
+    "Time": "2023-05-20T16:20:00Z"
+  },
+  {
+    "UserName": "Kate",
+    "Type": 1,
+    "Time": "2023-05-20T16:21:00Z"
+  }
+]
