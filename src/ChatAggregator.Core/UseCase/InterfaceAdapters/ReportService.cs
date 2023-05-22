@@ -52,6 +52,8 @@ public class ReportService : IReportService
                     AppendAggregatedEvents(group.ToList(), stringBuilder);
                 }
                 break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(granularity), granularity, null);
         }
 
         return stringBuilder.ToString();

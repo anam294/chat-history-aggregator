@@ -22,6 +22,7 @@ builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<IFetcherService, FetcherService>();
+builder.Services.AddScoped<IDataService, DataService>();
 
 var app = builder.Build();
 
