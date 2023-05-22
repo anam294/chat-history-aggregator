@@ -1,7 +1,7 @@
 using ChatAggregator.Core.UseCase.Interfaces;
 using ChatAggregator.Domain.Entities;
 
-namespace ChatAggregator.App.UseCase.InterfaceAdapters;
+namespace ChatAggregator.Core.UseCase.InterfaceAdapters;
 
 public class EventService : IEventService
 {

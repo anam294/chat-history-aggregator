@@ -1,40 +1,120 @@
 [
   {
     "UserName": "Bob",
-    "Type": 0,
-    "Time": "2023-05-20T16:00:00Z"
+    "Type": 1,
+    "Time": "2023-05-01T05:00:00"
   },
   {
     "UserName": "Kate",
-    "Type": 0,
-    "Time": "2023-05-20T16:05:00Z"
+    "Type": 1,
+    "Time": "2023-05-01T05:05:00"
+  },
+  {
+    "UserName": "Bob",
+    "Type": 3,
+    "Time": "2023-05-01T05:15:00",
+    "Message": "Hey Kate, High 5?"
+  },
+  {
+    "UserName": "Kate",
+    "Type": 4,
+    "Time": "2023-05-01T05:17:00"
   },
   {
     "UserName": "Bob",
     "Type": 2,
-    "Message": "Hey, Kate - high five?",
-    "Time": "2023-05-20T16:15:00Z"
+    "Time": "2023-05-01T05:18:00"
   },
   {
     "UserName": "Kate",
     "Type": 3,
-    "Message": "Kate high-fives Bob",
-    "Time": "2023-05-20T16:17:00Z"
-  },
-  {
-    "UserName": "Bob",
-    "Type": 1,
-    "Time": "2023-05-20T16:18:00Z"
+    "Time": "2023-05-01T05:20:00",
+    "Message": "Oh typical!"
   },
   {
     "UserName": "Kate",
     "Type": 2,
-    "Message": "Oh, typical",
-    "Time": "2023-05-20T16:20:00Z"
+    "Time": "2023-05-01T05:21:00"
+  },
+  {
+    "UserName": "Matt",
+    "Type": 1,
+    "Time": "2023-05-01T06:00:00"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 1,
+    "Time": "2023-05-01T06:05:00"
+  },
+  {
+    "UserName": "Matt",
+    "Type": 3,
+    "Time": "2023-05-01T06:15:00",
+    "Message": "Hey Sarah, How are you?"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 3,
+    "Time": "2023-05-01T06:16:00",
+    "Message": "Hey Matt, I am good. Thanks"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 4,
+    "Time": "2023-05-01T06:17:00"
+  },
+  {
+    "UserName": "Matt",
+    "Type": 2,
+    "Time": "2023-05-01T06:18:00"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 3,
+    "Time": "2023-05-01T06:20:00",
+    "Message": "Oh typical!"
+  },
+  {
+    "UserName": "Julia",
+    "Type": 1,
+    "Time": "2023-05-01T06:22:00"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 4,
+    "Time": "2023-05-01T06:23:00"
+  },
+  {
+    "UserName": "Sarah",
+    "Type": 2,
+    "Time": "2023-05-01T06:24:00"
+  },
+  {
+    "UserName": "Julia",
+    "Type": 3,
+    "Time": "2023-05-01T06:24:00",
+    "Message": "Wow such a nice person"
+  },
+  {
+    "UserName": "Julia",
+    "Type": 2,
+    "Time": "2023-05-01T06:25:00"
+  },
+  {
+    "UserName": "Bob",
+    "Type": 1,
+    "Time": "2023-05-22T05:00:00"
   },
   {
     "UserName": "Kate",
     "Type": 1,
-    "Time": "2023-05-20T16:21:00Z"
+    "Time": "2023-05-22T05:05:00"
+  },
+  {
+    "UserName": "Bob",
+    "Type": 3,
+    "Time": "2023-05-22T05:15:00",
+    "Message": "Hey Kate, High 5?"
   }
 ]
+

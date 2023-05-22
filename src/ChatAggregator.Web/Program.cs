@@ -1,4 +1,5 @@
-using ChatAggregator.App.UseCase.InterfaceAdapters;
+using ChatAggregator.Core.UseCase.InterfaceAdapters;
+using ChatAggregator.Core.Configurations;
 using ChatAggregator.Core.UseCase.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var settings = new AppSettings()
+{
+    DataFilePath = builder.Configuration.GetSection("DataFilePath").Value
+};
+
 // Dependency Injection
+builder.Services.AddSingleton(settings);
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IReportService, ReportService>();

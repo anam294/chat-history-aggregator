@@ -3,7 +3,7 @@ using ChatAggregator.Core.UseCase.Interfaces;
 using ChatAggregator.Domain.Entities;
 using ChatAggregator.Domain.Enums;
 
-namespace ChatAggregator.App.UseCase.InterfaceAdapters;
+namespace ChatAggregator.Core.UseCase.InterfaceAdapters;
 
 public class ReportService : IReportService
 {
@@ -38,7 +38,7 @@ public class ReportService : IReportService
 
                 foreach (var group in groupedByHour)
                 {
-                    stringBuilder.AppendLine($"{group.Key.Date} {group.Key.Hour}:00");
+                    stringBuilder.AppendLine($"{group.Key.Date.ToString("dd/MM/yyyy")} - {group.Key.Hour}:00");
                     AppendAggregatedEvents(group.ToList(), stringBuilder);
                 }
                 break;
@@ -61,13 +61,13 @@ public class ReportService : IReportService
     {
         switch (chatEvent.Type)
         {
-            case ChatEvent.EventType.Enter:
+            case EventType.Enter:
                 return $"{chatEvent.UserName} enters the room";
-            case ChatEvent.EventType.Leave:
+            case EventType.Leave:
                 return $"{chatEvent.UserName} leaves";
-            case ChatEvent.EventType.Comment:
+            case EventType.Comment:
                 return $"{chatEvent.UserName} comments: \"{chatEvent.Message}\"";
-            case ChatEvent.EventType.HighFive:
+            case EventType.HighFive:
                 return $"{chatEvent.UserName} high-fives {chatEvent.TargetUser}";
             default:
                 throw new Exception("Unknown event type");
@@ -76,10 +76,10 @@ public class ReportService : IReportService
 
     private void AppendAggregatedEvents(List<ChatEvent> group, StringBuilder stringBuilder)
     {
-        var enters = group.Count(e => e.Type == ChatEvent.EventType.Enter);
-        var leaves = group.Count(e => e.Type == ChatEvent.EventType.Leave);
-        var comments = group.Count(e => e.Type == ChatEvent.EventType.Comment);
-        var highFives = group.Count(e => e.Type == ChatEvent.EventType.HighFive);
+        var enters = group.Count(e => e.Type == EventType.Enter);
+        var leaves = group.Count(e => e.Type == EventType.Leave);
+        var comments = group.Count(e => e.Type == EventType.Comment);
+        var highFives = group.Count(e => e.Type == EventType.HighFive);
 
         if (enters > 0)
             stringBuilder.AppendLine($"\t{enters} person(s) entered");
